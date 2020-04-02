@@ -1,0 +1,3 @@
+#! /usr/bin/env node
+// 指定当前脚本由node.js进行解析
+require('../dist/main.js');

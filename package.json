@@ -1,0 +1,36 @@
+{
+  "name": "simplenodeserver-cli",
+  "version": "1.0.0",
+  "description": "SimpleNodeServe 脚手架",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "chalk": "^2.4.2",
+    "commander": "^3.0.2",
+    "download-git-repo": "^3.0.2",
+    "ini": "^1.3.5",
+    "inquirer": "^7.0.0",
+    "log-symbols": "^3.0.0",
+    "ora": "^4.0.2"
+  },
+  "devDependencies": {},
+  "bin": {
+    "sns-cli": "./bin/www"
+  },
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch",
+    "postinstall": "sns-cli config set"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SandBoat/SimpleNodeServer-Cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SandBoat/SimpleNodeServer-Cli/issues"
+  },
+  "homepage": "https://github.com/SandBoat/SimpleNodeServer-Cli#readme"
+}
